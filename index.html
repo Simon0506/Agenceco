@@ -8,25 +8,25 @@
 
 <body>
 
-  <header>
-    <nav>
-      <ul>
-        <li id="Agenceco"><a href="#Accueil">Agenceco</a></li>
-        <li><a href="#Accueil">Accueil</a></li>
-        <li><a href="#Equipe">Notre équipe</a></li>
-        <li><a href="#Services">Nos services</a></li>
-        <li>Témoignages</li>
-        <li><a href="Contact">Contactez-nous</a></li>
-        <li><a href="#Actualites">Actualités</a></li>
-      </ul>
-    </nav>
+  <nav>
+    <ul>
+      <li id="Agenceco"><a href="#Accueil">Agenceco</a></li>
+      <li><a href="#Accueil">Accueil</a></li>
+      <li><a href="#Equipe">Notre équipe</a></li>
+      <li><a href="#Services">Nos services</a></li>
+      <li>Témoignages</li>
+      <li><a href="Contact">Contactez-nous</a></li>
+      <li><a href="#Actualites">Actualités</a></li>
+    </ul>
+  </nav>
+
+  <header id="Accueil">
+    <img src="assets/rodion-kutsaev-049M_crau5k-unsplash 1.jpg" alt="">
+    <p>Bienvenue dans votre</p>
+    <h1>agence web écologique</h1>
   </header>
-
+  
   <main>
-    <section id="Accueil">
-      <h1>Bienvenue dans votre <b>agence web écologique</b></h1>
-    </section>
-
     <section id="Equipe">
       <h2>Notre équipe</h2>
       <div>
@@ -34,18 +34,18 @@
       </div>
       <div>
         <div>
-          <img src="./assets/image 1.jpg" alt="Julie Dupond">
-          <p class="Collegue">Julie Dupond</p>
+          <img src="assets/image 1.jpg" alt="Julie Dupond">
+          <h3>Julie Dupond</h3>
           <p class="DescriptionJob">Consectetur adipiscing elit. Donec sed leo in nisi vehicula bibendum</p>
         </div>
         <div>
-          <img src="./assets/image 2.jpg" alt="Romeo Sylla">
-          <p class="Collegue">Romeo Sylla</p>
+          <img src="assets/image 2.jpg" alt="Romeo Sylla">
+          <h3>Romeo Sylla</h3>
           <p class="DescriptionJob">Consectetur adipiscing elit. Donec sed leo in nisi vehicula bibendum</p>
         </div>
         <div>
-          <img src="./assets/image 3.jpg" alt="Javier Bardem">
-          <p class="Collegue">Javier Bardem</p>
+          <img src="assets/image 3.jpg" alt="Javier Bardem">
+          <h3>Javier Bardem</h3>
           <p class="DescriptionJob">Consectetur adipiscing elit. Donec sed leo in nisi vehicula bibendum</p>
         </div>
       </div>
@@ -71,12 +71,12 @@
     <section id="Services">
       <h2>Nos services</h2>
       <div>
-        <img src="./assets/Vector.jpg" alt="logo création site web">
-        <p>Création de sites web</p>
+        <img src="assets/Vector.jpg" alt="logo création site web">
+        <h3>Création de sites web</h3>
       </div>
       <div>
-        <img src="./assets/Vector-1.jpg" alt="logo audit qualité">
-        <p>Audit qualité</p>
+        <img src="assets/Vector-1.jpg" alt="logo audit qualité">
+        <h3>Audit qualité</h3>
       </div>
     </section>
     <section id="Actualites">
@@ -103,12 +103,94 @@
     <section id="Contact">
       <h2>Contactez-nous</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. donec sed leo in.</p>
-      
+      <form action="#">
+        <div>
+          <input type="text" placeholder="Nom">
+          <input type="text" placeholder="Catégorie">
+        </div>
+        <div>
+          <input type="tel" placeholder="Téléphone">
+          <input type="text" placeholder="Ville">
+        </div>
+        <div>
+          <input type="email" placeholder="Email">
+        </div>
+        <div>
+          <textarea name="Message" placeholder="Message"></textarea>
+        </div>
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+    <section>
+      <div>
+        <div>
+          <img src="assets/jason-goodman-Oalh2MojUuk-unsplash 1.jpg" alt="image d'une réunion">
+        </div>
+        <div>
+          <h3>A propos de nous</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. donec sed leo in adipiscing</p>
+          <div>
+            <div>
+              <img src="assets/Vector-2.jpg" alt="logo écologique">
+              <h4>Ecologique</h4>
+            </div>
+                      <div>
+              <img src="assets/Vector-3.jpg" alt="logo responsable">
+              <h4>Responsable</h4>
+            </div>
+                      <div>
+              <img src="assets/Vector-4.jpg" alt="logo assistance">
+              <h4>24/7 Assistance</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Notre galerie</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. donec sed leo in nisi vehicula bibendum.Aliquam sit amet blandit nisi, sodales molestie.</p>
+      <img src="assets/kevin-bhagat-zNRITe8NPqY-unsplash 1.jpg" alt="photo">
+      <div>
+        <button id="Prev"><</button>
+        <button id="Next">></button>
+      </div>
     </section>
   </main>
 
   <footer>
-
+    <section>
+      <div>
+        <h3>Content</h3>
+        <p>consectetur<br>adipiscing</p>
+      </div>
+      <div>
+        <h3>Informations</h3>
+        <p>consectetur<br>adipiscing</p>
+      </div>
+      <div>
+        <h3>Services</h3>
+        <p>consectetur<br>adipiscing</p>
+      </div>
+      <div>
+        <h3>Aide</h3>
+        <p>consectetur<br>adipiscing</p>
+      </div>
+      <div>
+          <p>+33 00 00 00 00 00<br>+33 00 00 00 00 00</p>
+          <p>75001 Paris<br>France</p>
+      </div>
+    </section>
+    <section>
+      <div>Copyright &copy; 2021 AGENCECO - All rights reserved</div>
+      <div>
+        <button>Me connecter</button>
+      </div>
+      <div>
+        <a href="#"><img src="assets/facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="assets/twitter.png" alt="X (twitter)"></a>
+        <a href="#"><img src="assets/instagram.png" alt="instagram"></a>
+      </div>
+    </section>
   </footer>
 
 </body>
