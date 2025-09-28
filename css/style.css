@@ -1,0 +1,443 @@
+body {
+  background-color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.6em;
+  color: black;
+  margin: auto;
+  max-width: 1450px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  background-image: url("../assets/rodion-kutsaev-049M_crau5k-unsplash\ 1.jpg");
+  background-size: cover;
+  padding-bottom: 100px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 20px 30px;
+  font-size: 0.8em;
+}
+
+#Agenceco {
+  color: #255919;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 15px 0;
+}
+
+#Accueil {
+  text-align: right;
+  margin-right: 100px;
+  margin-top: 500px;
+}
+#Accueil p {
+  color: white;
+  font-size: 2em;
+  margin: 0;
+}
+
+h1 {
+  color: #C8FF00;
+  font-size: 2.5em;
+  margin: 0;
+}
+
+main {
+  background-color: white;
+}
+
+h2 {
+  padding-top: 30px;
+  color: #469B61;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 600;
+}
+
+#Equipe {
+  margin: -60px auto 0 auto;
+  padding: 0 50px;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.Perso {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Perso div {
+  margin: 50px auto 0 auto;
+  width: 250px;
+  height: 450px;
+}
+
+.Perso-img {
+  height: 250px;
+  width: 250px;
+  object-fit: cover; 
+  border-radius: 50%;
+  object-position: top;
+}
+
+h3 {
+  font-size: 0.9em;
+  font-weight: 500;
+  margin: 0;
+}
+.DescriptionJob {
+  color: #868686;
+  font-size: 0.65em;
+  font-weight: 400;
+  margin: 5px 0;
+}
+
+.Satisfaction {
+  background-color: #183A43;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font-size: 0.7em;
+  padding: 10px 130px;
+  margin: 0 -50px;
+}
+
+.NombreClients {
+  color: #C8FF00;
+  font-size: 2.2em;
+  font-weight: 700;
+  margin: 10px 0 -20px 0;
+}
+
+.Services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 250px;
+  margin: 150px 60px 0 60px;
+}
+
+.Services img {
+  padding: 85px;
+  transform: scale(1.5);
+  background-color: #F4F6F5;
+  border-radius: 20px;
+}
+
+.Services h3 {
+  margin-top: 80px;
+  text-align: center;
+  font-size: 1.7em;
+  font-weight: 600;
+}
+
+#Crea {
+  margin-left: -80px;
+}
+
+.Actu {
+  background-color: #469B61;
+  margin: 15px 120px;
+  padding: 10px;
+  justify-items: center;
+  border-radius: 10px;
+  color: white;
+  font-size: 0.8em;
+  font-weight: 400;
+}
+
+.TitreActu {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+#Contact {
+  background-color: #183A43;
+  text-align: center;
+  color: white;
+  padding-bottom: 150px;
+}
+
+#Contact h2 {
+  color: #C8FF00;
+  padding-top: 50px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+#Contact p {
+  margin: 10px;
+  font-size: 1.1em;
+  font-weight: 400;
+}
+
+#form-contact {
+  margin: 0 150px;
+}
+
+.line-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin: 50px 0;
+}
+
+.line-block {
+  background-color: white;
+  height: 4px;
+  border-radius: 2px;
+}
+.line-contact input, .line-contact textarea {
+  background-color: #183A43;
+  color: white;
+  width: 550px;
+  height: 50px;
+  border-width: 0;
+  padding: 0;
+}
+
+#email {
+  width: 1150px;
+}
+
+#message {
+  width: 1150px;
+  height: 300px;
+}
+
+#Contact ::placeholder {
+  color: white;
+  font-size: 1.5em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+#submit {
+  float: right;
+  background-color: #C8FF00;
+  border-width: 0;
+  border-radius: 30px;
+  font-size: 16px;
+  padding: 20px 60px;
+  font-weight: 500;
+}
+
+#About {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 100px;
+}
+
+#about-staff {
+  max-width: 600px;
+  max-height: 400px;
+  margin-top: 11px;
+  border-radius: 20px;
+  object-fit: contain;
+}
+
+#AboutUs {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 560px;
+  max-height: 360px;
+  height: fit-content;
+  font-size: 18px;
+}
+
+#AboutUs h3 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+#AboutUs p {
+  color: #868686;
+  text-align: center;
+  font-weight: 300;
+}
+
+#logo-about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+  margin-top: 40px;
+  gap: 50px;
+}
+
+#logo-about h4 {
+    color: #183A43;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.logo-about {
+  width: 150px;
+  justify-items: center;
+}
+
+.logo {
+  border: solid 4px #183A43;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  object-position: center;
+  padding: 40px 30px 30px 40px;
+  justify-items: center;
+}
+
+.logo img {
+  height: 50px;
+}
+
+#logo-resp {
+  margin-left: -10px;
+}
+
+#Galerie {
+  margin: 100px;
+  margin-bottom: 0;
+  justify-items: center;
+}
+
+#Galerie p {
+  text-align: center;
+  margin: -20px -10px 30px -10px;
+  font-size: 29px;
+}
+
+#Galerie img {
+  width: 1250px;
+  border-radius: 20px;
+}
+
+#Galerie-btn {
+  display: flex;
+  gap: 1150px;
+  padding-bottom: 30px;
+}
+
+#Next-btn {
+  background-image: url(../assets/chevron-droit.png);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-width: 1px;
+  transition: background;
+}
+
+#Next-btn:hover {
+  background-color: black;
+  background-image: url(../assets/chevron-droit-hover.png);
+}
+
+#Prev-btn {
+  background-image: url(../assets/chevron-gauche.png);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-width: 1px;
+  transition: background;
+}
+
+#Prev-btn:hover {
+  background-color: black;
+  background-image: url(../assets/chevron-gauche-hover.png);
+}
+
+#Galerie-btn img {
+  height: 20px;
+  width: 25px;
+}
+
+#Liens {
+  background-color: #183A43;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 30px 100px;
+}
+
+.title-links {
+  font-size: 23px;
+  font-weight: 400;
+}
+
+.text-links {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.Coordonnees {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#Liens img {
+  width: 35px;
+  height: auto;
+}
+
+#Copyright {
+  background-color: #0C2227;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 40px 100px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+#connect-btn {
+  background-color: #C8FF00;
+  border-radius: 10px;
+  border: none;
+  width: 170px;
+  height: 40px;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+#logos-network {
+
+}
+.Network {
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 25px;
+  padding: 5px;
+  margin: 0 20px;
+}
