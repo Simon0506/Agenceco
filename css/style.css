@@ -1,11 +1,9 @@
 body {
-  background-color: black;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-size: 1.6em;
   color: black;
   margin: auto;
-  max-width: 1450px;
+  justify-content: center;
 }
 
 a {
@@ -13,19 +11,23 @@ a {
   color: black;
 }
 
-header {
-  background-image: url("../assets/rodion-kutsaev-049M_crau5k-unsplash\ 1.jpg");
-  background-size: cover;
-  padding-bottom: 100px;
-}
+
+/* Barre de navigation */
 
 nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  padding: 20px 30px;
-  font-size: 0.8em;
+  padding: 15px 30px;
+  font-size: 1.2em;
+}
+
+.burger {
+  display: none;
 }
 
 #Agenceco {
@@ -39,75 +41,93 @@ nav ul {
   gap: 20px;
   list-style: none;
   margin: 15px 0;
+  padding-right: 10px;
+}
+/* En-tête */
+
+.backgroundAccueil {
+  background-image: url("../assets/rodion-kutsaev-049M_crau5k-unsplash_1.jpg");
+  background-size: cover;
+  height: 800px;
+  background-position: center;
+  position: relative;
+  bottom: 60px;
 }
 
-#Accueil {
+/* Accueil */
+
+#Accueil { 
+  position: absolute;
+  right: 100px;
+  bottom: 80px;
   text-align: right;
-  margin-right: 100px;
-  margin-top: 500px;
 }
 #Accueil p {
+
   color: white;
-  font-size: 2em;
+  font-size: 3em;
   margin: 0;
 }
+
+/* Titres h1-h4 */
 
 h1 {
   color: #C8FF00;
-  font-size: 2.5em;
+  font-size: 3.7em;
   margin: 0;
 }
 
-main {
-  background-color: white;
-}
-
 h2 {
-  padding-top: 30px;
   color: #469B61;
   text-align: center;
-  font-size: 2em;
+  font-size: 3.2em;
   font-weight: 600;
 }
 
+/* Notre équipe */
+
 #Equipe {
-  margin: -60px auto 0 auto;
-  padding: 0 50px;
-  text-align: center;
-  font-size: 1.1em;
+  margin-top: -60px;
 }
 
-.Perso {
+.team {
+  text-align: center;
+  font-size: 1.7em;
+  padding: 0 50px;
+}
+
+.staff {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
-.Perso div {
+.staff div {
   margin: 50px auto 0 auto;
-  width: 250px;
+  width: 240px;
   height: 450px;
+  justify-items: center;
 }
 
-.Perso-img {
-  height: 250px;
-  width: 250px;
+.staff-img {
+  height: 240px;
+  width: 240px;
   object-fit: cover; 
   border-radius: 50%;
   object-position: top;
 }
 
-h3 {
-  font-size: 0.9em;
-  font-weight: 500;
-  margin: 0;
-}
-.DescriptionJob {
+.job {
+  text-align: center;
   color: #868686;
-  font-size: 0.65em;
-  font-weight: 400;
+  font-size: 1.1em;
+  font-weight: 300;
   margin: 5px 0;
 }
+
+/* Staisfaction clients  */
 
 .Satisfaction {
   background-color: #183A43;
@@ -115,59 +135,62 @@ h3 {
   align-items: center;
   justify-content: space-between;
   color: white;
-  font-size: 0.7em;
+  font-size: 1.2em;
   padding: 10px 130px;
-  margin: 0 -50px;
+  text-align: center;
 }
 
-.NombreClients {
+.number {
   color: #C8FF00;
-  font-size: 2.2em;
+  font-size: 2em;
   font-weight: 700;
   margin: 10px 0 -20px 0;
 }
 
-.Services {
+/* Nos services  */
+
+.services {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 250px;
-  margin: 150px 60px 0 60px;
+  gap: 150px;
+  margin-top: 100px;
 }
 
-.Services img {
-  padding: 85px;
-  transform: scale(1.5);
+.services img {
+  padding: 125px;
+  width: 225px;
   background-color: #F4F6F5;
-  border-radius: 20px;
+  border-radius: 30px;
 }
 
-.Services h3 {
-  margin-top: 80px;
+.services h3 {
   text-align: center;
-  font-size: 1.7em;
+  font-size: 2.5em;
   font-weight: 600;
+  margin: 0;
 }
 
-#Crea {
-  margin-left: -80px;
-}
+/* Actualités */
 
-.Actu {
+.actu {
   background-color: #469B61;
   margin: 15px 120px;
   padding: 10px;
-  justify-items: center;
+  text-align: center;
   border-radius: 10px;
   color: white;
-  font-size: 0.8em;
+  font-size: 1.2em;
   font-weight: 400;
 }
 
-.TitreActu {
-  font-size: 1.5em;
-  font-weight: 400;
+.title-actu {
+  font-size: 1.6em;
+  font-weight: 500;
+  margin: 10px 0;
 }
+
+/* Contactez-nous */
 
 #Contact {
   background-color: #183A43;
@@ -184,8 +207,8 @@ h3 {
 }
 
 #Contact p {
-  margin: 10px;
-  font-size: 1.1em;
+  margin: 10px 100px;
+  font-size: 1.7em;
   font-weight: 400;
 }
 
@@ -198,7 +221,12 @@ h3 {
   align-items: center;
   justify-content: center;
   gap: 50px;
+  width: 100%;
   margin: 50px 0;
+}
+
+.line-form {
+  width: 100%;
 }
 
 .line-block {
@@ -206,22 +234,18 @@ h3 {
   height: 4px;
   border-radius: 2px;
 }
+
 .line-contact input, .line-contact textarea {
   background-color: #183A43;
   color: white;
-  width: 550px;
+  width: 100%;
   height: 50px;
   border-width: 0;
   padding: 0;
 }
 
-#email {
-  width: 1150px;
-}
-
 #message {
-  width: 1150px;
-  height: 300px;
+  min-height: 300px;
 }
 
 #Contact ::placeholder {
@@ -236,63 +260,71 @@ h3 {
   background-color: #C8FF00;
   border-width: 0;
   border-radius: 30px;
-  font-size: 16px;
-  padding: 20px 60px;
+  font-size: 1em;
+  padding: 18px 60px;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
+  position: absolute;
+  right: 150px;
 }
+
+/* A propos de nous */
 
 #About {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 40px;
-  margin-top: 100px;
+  margin: 100px 50px 0 50px;
+}
+
+.about {
+  max-width: 600px;
+  aspect-ratio: 1.5;
+  align-items: center;
 }
 
 #about-staff {
-  max-width: 600px;
-  max-height: 400px;
-  margin-top: 11px;
+  width: 100%;
   border-radius: 20px;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 #AboutUs {
+  width: 100%;
   border: 1px solid black;
   border-radius: 10px;
-  padding: 20px;
-  max-width: 560px;
-  max-height: 360px;
-  height: fit-content;
-  font-size: 18px;
+  font-size: 1.1em;
 }
 
 #AboutUs h3 {
+  padding-top: 20px;
   text-align: center;
-  font-size: 25px;
+  font-size: 1.3em;
   font-weight: 600;
+  margin: 0;
 }
 
 #AboutUs p {
   color: #868686;
   text-align: center;
   font-weight: 300;
+  padding: 0 20px;
 }
 
 #logo-about {
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding-bottom: 20px;
-  margin-top: 40px;
-  gap: 50px;
+  justify-content: space-between;
+  padding: 20px 20px 0 20px;
 }
 
 #logo-about h4 {
     color: #183A43;
     font-weight: 600;
     text-align: center;
-    margin: 0 0 30px 0;
+    padding-bottom: 10px;
+    margin: 10px 0;
 }
 
 .logo-about {
@@ -318,6 +350,8 @@ h3 {
   margin-left: -10px;
 }
 
+/* Notre galerie */
+
 #Galerie {
   margin: 100px;
   margin-bottom: 0;
@@ -326,18 +360,23 @@ h3 {
 
 #Galerie p {
   text-align: center;
-  margin: -20px -10px 30px -10px;
-  font-size: 29px;
+  margin: -20px 0 30px 0;
+  font-size: 1.7em;
+}
+
+#Galerie div {
+  width: 100%;
 }
 
 #Galerie img {
-  width: 1250px;
+  width: 100%;
   border-radius: 20px;
+  object-fit: contain;
 }
 
 #Galerie-btn {
   display: flex;
-  gap: 1150px;
+  justify-content: space-between;
   padding-bottom: 30px;
 }
 
@@ -380,13 +419,21 @@ h3 {
   width: 25px;
 }
 
+/* Pied de page  */
+
 #Liens {
   background-color: #183A43;
   display: flex;
   align-items: center;
   justify-content: space-between;
   color: white;
-  padding: 30px 100px;
+  padding: 30px 50px;
+}
+
+.box-links {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .title-links {
@@ -400,14 +447,18 @@ h3 {
 }
 
 .Coordonnees {
+  min-width: 250px;
   display: flex;
   align-items: center;
   gap: 20px;
 }
+
 #Liens img {
   width: 35px;
   height: auto;
 }
+
+/* Copyright */
 
 #Copyright {
   background-color: #0C2227;
@@ -431,13 +482,177 @@ h3 {
   font-weight: 500;
 }
 
-#logos-network {
-
-}
 .Network {
   border: 2px solid white;
   border-radius: 10px;
   width: 25px;
   padding: 5px;
   margin: 0 20px;
+}
+
+
+/* Responsive */
+
+
+@media (max-width:1200px) {
+  nav {
+    font-size: 0.9em;
+  }
+
+  .backgroundAccueil {
+    height: unset;
+    aspect-ratio: 1.5;
+  }
+  #About {
+    flex-direction: column;
+  }
+
+  .services {
+    justify-content: space-between;
+    gap: unset;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+
+@media (max-width:1024px) {
+  .services {
+    flex-direction: column;
+  }
+
+  .services div {
+    margin-bottom: 50px;
+  }
+
+  #Liens {
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 50px;
+  }
+
+  #Copyright {
+    padding: 40px 50px;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+
+@media (max-width:905px) {
+  .burger {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .burger span {
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    margin: 5px;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .backgroundAccueil {
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #Accueil {
+    right: unset;
+    bottom: unset;
+    text-align: center;
+    margin: 0;
+    font-size: 2vw;
+  }
+
+  h2 {
+    font-size: 2.3em;
+  }
+
+  .staff {
+    flex-direction: column;
+  }
+
+  .staff div {
+    margin: 50px;
+    transform: scale(1.3);
+  }
+
+  .Satisfaction {
+    flex-direction: column;
+    padding: 10px 50px;
+  }
+
+  .services {
+    transform: scale(0.6);
+    margin-top: -200px;
+  }
+
+  #Actualites {
+    margin-top: -200px;
+  }
+  .actu {
+    text-align: center;
+    margin: 15px 50px;
+  }
+
+  #Contact {
+    padding-bottom: 50px;
+  }
+  #Contact p {
+    margin: 0 50px;
+  }
+  #form-contact {
+    margin: 0 50px;
+  }
+
+  .line-contact {
+    flex-direction: column;
+  }
+
+  #submit {
+    right: unset;
+    align-items: center;
+  }
+
+  #about-staff-box {
+    display: none;
+  }
+
+  .about {
+    aspect-ratio: unset;
+    margin-top: -50px;
+  }
+
+  #logo-about {
+    flex-direction: column;
+  }
+
+  #Galerie {
+    margin: 0 50px;
+  }
+
+  #Liens {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  #Copyright {
+    flex-direction: column;
+    position: relative;
+    padding: 50px;
+    padding-top: 20px;
+  }
+
+  .copyright {
+    position: absolute;
+    bottom: 20px;
+  }
 }

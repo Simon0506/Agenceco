@@ -11,52 +11,59 @@
 </head>
 
 <body>
+  <header>
 
 <!--------------- Barre de navigation -------------------->
-  <header>
+
+    
+  
     <nav>
       <a id="Agenceco" href="#Accueil"><strong>Agenc<em>eco</em></strong></a>
+      <div class="burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <ul>
         <li><a href="#Accueil">Accueil</a></li>
         <li><a href="#Equipe">Notre équipe</a></li>
         <li><a href="#Services">Nos services</a></li>
         <li><a href="#">Témoignages</a></li>
-        <li><a href="Contact">Contactez-nous</a></li>
+        <li><a href="#Contact">Contactez-nous</a></li>
         <li><a href="#Actualites">Actualités</a></li>
       </ul>
     </nav>
 
 <!-------------------- Accueil -------------------->
 
-
-    <div id="Accueil">
-      <p>Bienvenue dans votre</p>
-      <h1>agence web écologique</h1>
+    <div class="backgroundAccueil">
+      <div id="Accueil">
+        <p>Bienvenue dans votre</p>
+        <h1>agence web écologique</h1>
+      </div>
     </div>
-  </header>
-  
   <main>
 
 <!------------------- Notre équipe -------------------->
 
     <section id="Equipe">
       <h2>Notre équipe</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. donec sed leo in nisi vehicula bibendum.Aliquam sit amet blandit nisi, sodales molestie.</p>
-      <div class="Perso">
+      <p class="team">Lorem ipsum dolor sit amet, consectetur adipisicing elit. donec sed leo in nisi vehicula bibendum.Aliquam sit amet blandit nisi, sodales molestie.</p>
+      <div class="staff">
         <div>
-          <img src="assets/image 1.jpg" alt="Julie Dupond" class="Perso-img">
+          <img src="assets/image_1.jpg" alt="Julie Dupond" class="staff-img">
           <h3>Julie Dupond</h3>
-          <p class="DescriptionJob">Consectetur adipiscing elit. Donec sed leo in nisi vehicula bibendum</p>
+          <p class="job">Consectetur adipiscing elit. Donec sed leo in nisi vehicula bibendum</p>
         </div>
         <div>
-          <img src="assets/image 2.jpg" alt="Romeo Sylla" class="Perso-img">
+          <img src="assets/image_2.jpg" alt="Romeo Sylla" class="staff-img">
           <h3>Romeo Sylla</h3>
-          <p class="DescriptionJob">Consectetur adipiscing elit. Donec sed leo in nisi vehicula bibendum</p>
+          <p class="job">Consectetur adipiscing elit. Donec sed leo in nisi vehicula bibendum</p>
         </div>
         <div>
-          <img src="assets/image 3.jpg" alt="Javier Bardem" class="Perso-img">
+          <img src="assets/image_3.jpg" alt="Javier Bardem" class="staff-img">
           <h3>Javier Bardem</h3>
-          <p class="DescriptionJob">Consectetur adipiscing elit. Donec sed leo in nisi vehicula bibendum</p>
+          <p class="job">Consectetur adipiscing elit. Donec sed leo in nisi vehicula bibendum</p>
         </div>
       </div>
 
@@ -64,19 +71,19 @@
 
       <div class="Satisfaction">
         <div>
-          <p class="NombreClients">2500</p>
+          <p class="number">2500</p>
           <p>Clients satisfaits</p>
         </div>
         <div>
-          <p class="NombreClients">2500</p>
+          <p class="number">2500</p>
           <p>Clients satisfaits</p>
         </div>
         <div>
-          <p class="NombreClients">2500</p>
+          <p class="number">2500</p>
           <p>Clients satisfaits</p>
         </div>
         <div>
-          <p class="NombreClients">2500</p>
+          <p class="number">2500</p>
           <p>Clients satisfaits</p>
         </div>
       </div>
@@ -86,7 +93,7 @@
 
     <section id="Services">
       <h2>Nos services</h2>
-      <div class="Services">
+      <div class="services">
         <div>
           <img src="assets/Vector.jpg" alt="logo création site web">
           <h3 id="Crea">Création de sites web</h3>
@@ -102,20 +109,20 @@
 
     <section id="Actualites">
       <h2>Dernières actualités</h2>
-      <div class="Actu">
-        <h3 class="TitreActu">Le titre de mon actualité</h3>
+      <div class="actu">
+        <h3 class="title-actu">Le titre de mon actualité</h3>
         <p class="DateActu">05/04/2023</p>
         <p class="DescriptionActu">La description de l'actualité</p>
         <p class="ContenuActu">Le contenu de l'actualité</p>
       </div>
-      <div class="Actu">
-        <h3 class="TitreActu">Le titre de mon actualité</h3>
+      <div class="actu">
+        <h3 class="title-actu">Le titre de mon actualité</h3>
         <p class="DateActu">05/04/2023</p>
         <p class="DescriptionActu">La description de l'actualité</p>
         <p class="ContenuActu">Le contenu de l'actualité</p>
       </div>
-      <div class="Actu">
-        <h3 class="TitreActu">Le titre de mon actualité</h3>
+      <div class="actu">
+        <h3 class="title-actu">Le titre de mon actualité</h3>
         <p class="DateActu">05/04/2023</p>
         <p class="DescriptionActu">La description de l'actualité</p>
         <p class="ContenuActu">Le contenu de l'actualité</p>
@@ -129,38 +136,38 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. donec sed leo in.</p>
       <form action="#" id="form-contact">
         <div class="line-contact">
-          <div>
+          <div class="line-form">
             <input type="text" placeholder="Nom">
             <div class="line-block"></div>
           </div>
-          <div>
+          <div class="line-form">
             <input type="text" placeholder="Catégorie">
             <div class="line-block"></div>
           </div>
         </div>
         <div class="line-contact">
-          <div>
+          <div class="line-form">
             <input type="tel" placeholder="Téléphone">
             <div class="line-block"></div>
           </div>
-          <div>
+          <div class="line-form">
             <input type="text" placeholder="Ville">
             <div class="line-block"></div>
           </div>
         </div>
         <div class="line-contact">
-          <div>
+          <div class="line-form">
             <input id="email" type="email" placeholder="Email">
             <div class="line-block"></div>
           </div>
         </div>
         <div class="line-contact">
-          <div>
+          <div class="line-form">
             <textarea id="message" name="Message" placeholder="Message"></textarea>
             <div class="line-block"></div>
           </div>
         </div>
-        <div>
+        <div class="line-contact">
           <button type="submit" id="submit">Envoyer</button>
         </div>
       </form>
@@ -170,10 +177,10 @@
 
     <section>
       <div id="About">
-        <div>
-          <img id="about-staff" src="assets/jason-goodman-Oalh2MojUuk-unsplash 1.jpg" alt="image d'une réunion">
+        <div class="about" id="about-staff-box">
+          <img id="about-staff" src="assets/jason-goodman-Oalh2MojUuk-unsplash_1.jpg" alt="image d'une réunion">
         </div>
-        <div id="AboutUs">
+        <div class="about" id="AboutUs">
           <h3>A propos de nous</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. donec sed leo in adipiscing</p>
           <div id="logo-about">
@@ -206,7 +213,7 @@
       <h2>Notre galerie</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. donec sed leo in nisi vehicula bibendum.Aliquam sit amet blandit nisi, sodales molestie.</p>
       <div>
-        <img src="assets/kevin-bhagat-zNRITe8NPqY-unsplash 1.jpg" alt="photo">
+        <img src="assets/kevin-bhagat-zNRITe8NPqY-unsplash_1.jpg" alt="photo">
       </div>
       <div id="Galerie-btn">
           <button id="Prev-btn"></button>
@@ -219,21 +226,25 @@
 
   <footer>
     <section id="Liens">
-      <div>
-        <h3 class="title-links">Content</h3>
-        <p class="text-links">consectetur<br>adipiscing</p>
+      <div class="box-links">
+        <div>
+          <h3 class="title-links">Content</h3>
+          <p class="text-links">consectetur<br>adipiscing</p>
+        </div>
+        <div>
+          <h3 class="title-links">Informations</h3>
+          <p class="text-links">consectetur<br>adipiscing</p>
+        </div>
       </div>
-      <div>
-        <h3 class="title-links">Informations</h3>
-        <p class="text-links">consectetur<br>adipiscing</p>
-      </div>
-      <div>
-        <h3 class="title-links">Services</h3>
-        <p class="text-links">consectetur<br>adipiscing</p>
-      </div>
-      <div>
-        <h3 class="title-links">Aide</h3>
-        <p class="text-links">consectetur<br>adipiscing</p>
+      <div class="box-links">
+        <div>
+          <h3 class="title-links">Services</h3>
+          <p class="text-links">consectetur<br>adipiscing</p>
+        </div>
+        <div>
+          <h3 class="title-links">Aide</h3>
+          <p class="text-links">consectetur<br>adipiscing</p>
+        </div>
       </div>
       <div>
         <div class="Coordonnees">
@@ -250,7 +261,7 @@
 <!---------------- Copyright ------------------------->
 
     <section id="Copyright">
-      <div>Copyright &copy; 2021 AGENCECO - All rights reserved</div>
+      <div class="copyright">Copyright &copy; 2021 AGENCECO - All rights reserved</div>
       <div>
         <button id="connect-btn">Me connecter</button>
       </div>
