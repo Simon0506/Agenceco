@@ -2,8 +2,13 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   color: black;
-  margin: auto;
+  margin: 0;
   justify-content: center;
+  width: 100%;
+}
+
+input, textarea, ::placeholder {
+  font-family: 'Poppins', sans-serif;
 }
 
 a {
@@ -15,8 +20,10 @@ a {
 /* Barre de navigation */
 
 nav {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 1000;
   display: flex;
   justify-content: space-between;
@@ -26,14 +33,22 @@ nav {
   font-size: 1.2em;
 }
 
-.burger {
+.burger, .close-burger {
   display: none;
+}
+
+.close-burger img {
+  display: none;
+  width: 30px;
+  margin: 5px;
+  cursor: pointer;
 }
 
 #Agenceco {
   color: #255919;
   font-size: 2em;
   font-weight: 500;
+  margin: 0;
 }
 
 nav ul {
@@ -56,24 +71,24 @@ nav ul {
 
 /* Accueil */
 
-#Accueil { 
+.Accueil { 
   position: absolute;
   right: 100px;
   bottom: 80px;
   text-align: right;
 }
-#Accueil p {
+
+.title-line1 {
 
   color: white;
   font-size: 3em;
   margin: 0;
 }
 
-/* Titres h1-h4 */
-
-h1 {
+.title-line2 {
   color: #C8FF00;
   font-size: 3.7em;
+  font-weight: 600;
   margin: 0;
 }
 
@@ -119,11 +134,16 @@ h2 {
   object-position: top;
 }
 
+.staff h3 {
+  font-size: 1.7em;
+  font-weight: 500;
+  margin: 0;
+}
 .job {
   text-align: center;
   color: #868686;
   font-size: 1.1em;
-  font-weight: 300;
+  font-weight: 400;
   margin: 5px 0;
 }
 
@@ -173,7 +193,7 @@ h2 {
 
 /* Actualités */
 
-.actu {
+.news {
   background-color: #469B61;
   margin: 15px 120px;
   padding: 10px;
@@ -184,7 +204,7 @@ h2 {
   font-weight: 400;
 }
 
-.title-actu {
+.title-news {
   font-size: 1.6em;
   font-weight: 500;
   margin: 10px 0;
@@ -212,8 +232,9 @@ h2 {
   font-weight: 400;
 }
 
-#form-contact {
-  margin: 0 150px;
+.form-contact {
+  margin: 0 120px;
+  position: relative;
 }
 
 .line-contact {
@@ -251,21 +272,21 @@ h2 {
 #Contact ::placeholder {
   color: white;
   font-size: 1.5em;
-  font-family: "Poppins", sans-serif;
   font-weight: 300;
 }
 
 #submit {
-  float: right;
   background-color: #C8FF00;
+  color: black;
+  width: 180px;
+  height: 60px;
   border-width: 0;
   border-radius: 30px;
   font-size: 1em;
-  padding: 18px 60px;
-  font-family: "Poppins", sans-serif;
   font-weight: 500;
   position: absolute;
-  right: 150px;
+  right: 0;
+  cursor: pointer;
 }
 
 /* A propos de nous */
@@ -308,7 +329,7 @@ h2 {
 #AboutUs p {
   color: #868686;
   text-align: center;
-  font-weight: 300;
+  font-weight: 400;
   padding: 0 20px;
 }
 
@@ -380,7 +401,7 @@ h2 {
   padding-bottom: 30px;
 }
 
-#Next-btn {
+.Next-btn {
   background-image: url(../assets/chevron-droit.png);
   background-size: 20px;
   background-repeat: no-repeat;
@@ -389,15 +410,15 @@ h2 {
   width: 50px;
   border-radius: 50%;
   border-width: 1px;
-  transition: background;
 }
 
-#Next-btn:hover {
+.Next-btn:hover {
   background-color: black;
   background-image: url(../assets/chevron-droit-hover.png);
+  cursor: pointer;
 }
 
-#Prev-btn {
+.Prev-btn {
   background-image: url(../assets/chevron-gauche.png);
   background-size: 20px;
   background-repeat: no-repeat;
@@ -406,12 +427,12 @@ h2 {
   width: 50px;
   border-radius: 50%;
   border-width: 1px;
-  transition: background;
 }
 
-#Prev-btn:hover {
+.Prev-btn:hover {
   background-color: black;
   background-image: url(../assets/chevron-gauche-hover.png);
+  cursor: pointer;
 }
 
 #Galerie-btn img {
@@ -475,10 +496,8 @@ h2 {
   background-color: #C8FF00;
   border-radius: 10px;
   border: none;
-  width: 170px;
-  height: 40px;
-  font-size: 17px;
-  font-family: "Poppins", sans-serif;
+  padding: 8px 20px;
+  font-size: 1.2em;
   font-weight: 500;
 }
 
@@ -489,6 +508,198 @@ h2 {
   padding: 5px;
   margin: 0 20px;
 }
+
+
+
+/* Page de connexion */
+
+
+.login-page {
+  margin: 150px auto;
+  text-align: center;
+}
+
+.login-page p {
+  font-size: 1.8em;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  margin: auto;
+  justify-content: center;
+}
+
+.login-input {
+  font-size: 1.2em;
+  font-weight: 500;
+  margin: 15px;
+  padding: 15px 20px;
+  border: 3px solid #868686;
+  border-radius: 10px;
+  position: relative;
+}
+
+.login-btn {
+  background-color: #C8FF00;
+  color: black;
+  width: 220px;
+  height: 60px;
+  border-width: 0;
+  border-radius: 30px;
+  font-size: 1.1em;
+  font-weight: 500;
+  margin: 30px auto;
+  padding: 0;
+  cursor: pointer;
+}
+
+
+
+/* Page Nos actualités  */
+
+.news-page {
+  margin: 150px auto;
+  text-align: center;
+}
+
+.btn-addNews {
+  margin-bottom: 50px;
+}
+
+.addNews-btn {
+  background-color: #C8FF00;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.news-page .title-news, .publicationDate {
+  text-align: left;
+  margin: 0;
+}
+
+.description, .content {
+  margin: 40px;
+}
+
+.bottom-news {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-modify {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.updateNews {
+  background-color: #ffaa01;
+  color: white;
+  font-weight: 600;
+  padding: 0 25px;
+  border-radius: 5px;
+}
+
+.deleteNews {
+  background-color: red;
+  color: white;
+  font-weight: 600;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  padding: 3px 25px;
+  cursor: pointer;
+}
+
+
+
+
+
+/* Page Ajouter une actualité */
+
+.addNews-page {
+  margin: 150px auto;
+  text-align: center;
+}
+
+.addNews {
+  margin: 0 100px;
+  background-color: #183A43;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 40px;
+}
+
+.addNews-title, .addNews-textarea {
+  background-color: #183A43;
+  border: 3px solid white;
+  border-radius: 10px;
+  width: 100%;
+  color: white;
+  font-size: 1.3em;
+  margin: 20px;
+}
+
+.addNews ::placeholder {
+  color: white;
+}
+
+.addNews-title {
+  padding: 20px 10px;
+}
+
+.addNews-textarea {
+  padding: 20px 10px 70px 10px;
+}
+
+.saveNews {
+  background-color: #C8FF00;
+  color: black;
+  width: 220px;
+  height: 60px;
+  border-width: 0;
+  border-radius: 30px;
+  font-size: 1.1em;
+  font-weight: 500;
+  cursor: pointer;
+  margin: 20px;
+}
+
+
+
+
+/* Page Modifier l'actualité */
+
+
+.submit-update {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.submit-update .deleteNews {
+  width: 220px;
+  height: 60px;
+  border-width: 0;
+  border-radius: 30px;
+  font-size: 1.1em;
+  font-weight: 500;
+  cursor: pointer;
+  margin: 20px;
+}
+
+
+
 
 
 /* Responsive */
@@ -543,6 +754,7 @@ h2 {
   .burger {
     display: flex;
     flex-direction: column;
+    cursor: pointer;
   }
 
   .burger span {
@@ -552,8 +764,27 @@ h2 {
     margin: 5px;
   }
 
-  nav ul {
+  nav {
+    padding: 10px;
+    flex-wrap: wrap;
+  }
+
+  #menu {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.7em;
+    font-weight: 600;
+    gap: 50px;
+  }
+
+  .nav-closed {
+    transition: transform 2s;
     display: none;
+  }
+
+  .close-burger img {
+    display: unset;
   }
 
   .backgroundAccueil {
@@ -561,14 +792,14 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    align-items: center;
   }
 
-  #Accueil {
+  .Accueil {
     right: unset;
     bottom: unset;
     text-align: center;
     margin: 0;
+    padding-top: 100px;
     font-size: 2vw;
   }
 
@@ -576,13 +807,18 @@ h2 {
     font-size: 2.3em;
   }
 
+  .team {
+    font-size: 1.1em;
+  }
+
   .staff {
     flex-direction: column;
+    margin-top: 50px;
   }
 
   .staff div {
-    margin: 50px;
-    transform: scale(1.3);
+    margin: 0;
+    transform: scale(1.1);
   }
 
   .Satisfaction {
@@ -598,7 +834,7 @@ h2 {
   #Actualites {
     margin-top: -200px;
   }
-  .actu {
+  .news {
     text-align: center;
     margin: 15px 50px;
   }
@@ -606,20 +842,18 @@ h2 {
   #Contact {
     padding-bottom: 50px;
   }
-  #Contact p {
-    margin: 0 50px;
-  }
-  #form-contact {
+
+  #Contact p, .form-contact, #Galerie {
     margin: 0 50px;
   }
 
-  .line-contact {
+  .line-contact, #logo-about {
     flex-direction: column;
   }
 
   #submit {
-    right: unset;
-    align-items: center;
+    position: unset;
+    margin: auto;
   }
 
   #about-staff-box {
@@ -629,14 +863,6 @@ h2 {
   .about {
     aspect-ratio: unset;
     margin-top: -50px;
-  }
-
-  #logo-about {
-    flex-direction: column;
-  }
-
-  #Galerie {
-    margin: 0 50px;
   }
 
   #Liens {
