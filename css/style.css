@@ -263,6 +263,8 @@ h2 {
   height: 50px;
   border-width: 0;
   padding: 0;
+  font-size: 1.5em;
+  font-weight: 300;
 }
 
 #message {
@@ -271,7 +273,6 @@ h2 {
 
 #Contact ::placeholder {
   color: white;
-  font-size: 1.5em;
   font-weight: 300;
 }
 
