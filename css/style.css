@@ -58,6 +58,8 @@ nav ul {
   margin: 15px 0;
   padding-right: 10px;
 }
+
+
 /* En-tête */
 
 .backgroundAccueil {
@@ -68,6 +70,7 @@ nav ul {
   position: relative;
   bottom: 60px;
 }
+
 
 /* Accueil */
 
@@ -98,6 +101,7 @@ h2 {
   font-size: 3.2em;
   font-weight: 600;
 }
+
 
 /* Notre équipe */
 
@@ -147,6 +151,7 @@ h2 {
   margin: 5px 0;
 }
 
+
 /* Staisfaction clients  */
 
 .Satisfaction {
@@ -166,6 +171,7 @@ h2 {
   font-weight: 700;
   margin: 10px 0 -20px 0;
 }
+
 
 /* Nos services  */
 
@@ -191,6 +197,7 @@ h2 {
   margin: 0;
 }
 
+
 /* Actualités */
 
 .news {
@@ -209,6 +216,7 @@ h2 {
   font-weight: 500;
   margin: 10px 0;
 }
+
 
 /* Contactez-nous */
 
@@ -289,6 +297,7 @@ h2 {
   right: 0;
   cursor: pointer;
 }
+
 
 /* A propos de nous */
 
@@ -372,12 +381,12 @@ h2 {
   margin-left: -10px;
 }
 
+
 /* Notre galerie */
 
 #Galerie {
   margin: 100px;
   margin-bottom: 0;
-  justify-items: center;
 }
 
 #Galerie p {
@@ -386,60 +395,47 @@ h2 {
   font-size: 1.7em;
 }
 
-#Galerie div {
+.slider {
   width: 100%;
-}
-
-#Galerie img {
-  width: 100%;
+  overflow: hidden;
   border-radius: 20px;
-  object-fit: contain;
 }
 
-#Galerie-btn {
+.slides {
+  display: flex;
+  transition: all 0.5s;
+}
+
+.slide {
+  min-width: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.slider-btn {
   display: flex;
   justify-content: space-between;
   padding-bottom: 30px;
 }
 
-.Next-btn {
-  background-image: url(../assets/chevron-droit.png);
-  background-size: 20px;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 50px;
-  width: 50px;
+#prev, #next {
+  background-color: white;
+  border: 1px solid black;
+  padding: 8px 18px;
+  font-size: 1.5em;
   border-radius: 50%;
-  border-width: 1px;
 }
 
-.Next-btn:hover {
+#prev:hover, #next:hover {
   background-color: black;
-  background-image: url(../assets/chevron-droit-hover.png);
+  color: #C8FF00;
   cursor: pointer;
 }
 
-.Prev-btn {
-  background-image: url(../assets/chevron-gauche.png);
-  background-size: 20px;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  border-width: 1px;
-}
-
-.Prev-btn:hover {
-  background-color: black;
-  background-image: url(../assets/chevron-gauche-hover.png);
-  cursor: pointer;
-}
-
-#Galerie-btn img {
-  height: 20px;
-  width: 25px;
-}
 
 /* Pied de page  */
 
@@ -479,6 +475,7 @@ h2 {
   width: 35px;
   height: auto;
 }
+
 
 /* Copyright */
 
@@ -614,11 +611,9 @@ h2 {
   font-size: 1em;
   border: none;
   border-radius: 5px;
-  padding: 3px 25px;
+  padding: 4px 17px;
   cursor: pointer;
 }
-
-
 
 
 
@@ -677,7 +672,6 @@ h2 {
 
 
 
-
 /* Page Modifier l'actualité */
 
 
@@ -698,7 +692,6 @@ h2 {
   cursor: pointer;
   margin: 20px;
 }
-
 
 
 
@@ -727,6 +720,7 @@ h2 {
   }
 }
 
+/* ------- */
 
 @media (max-width:1024px) {
   .services {
@@ -750,6 +744,7 @@ h2 {
   }
 }
 
+/* ------- */
 
 @media (max-width:905px) {
   .burger {
@@ -770,18 +765,21 @@ h2 {
     flex-wrap: wrap;
   }
 
-  #menu {
+  .nav-links {
     width: 100%;
     flex-direction: column;
     text-align: center;
     font-size: 1.7em;
     font-weight: 600;
     gap: 50px;
+    margin: 0;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.8s ease;
   }
 
-  .nav-closed {
-    transition: transform 2s;
-    display: none;
+  .nav-links.open {
+    max-height: 500px;
   }
 
   .close-burger img {
@@ -882,4 +880,15 @@ h2 {
     position: absolute;
     bottom: 20px;
   }
+  
+  .addNews {
+    font-size: 0.8em;
+    margin: 0 50px;
+  }
+
+  .submit-update, .btn-modify {
+    gap: 5px;
+    flex-direction: column;
+  }
 }
+

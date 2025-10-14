@@ -24,7 +24,7 @@
             <div id="croix" class="close-burger">
                 <img src="assets/croix_menu.png" alt="closed" >
             </div>
-            <ul id="menu" class="nav-closed">
+            <ul id="menu" class="nav-links">
                 <li><a href="#Accueil">Accueil</a></li>
                 <li><a href="#Equipe">Notre équipe</a></li>
                 <li><a href="#Services">Nos services</a></li>
@@ -211,13 +211,18 @@
         <section id="Galerie">
         <h2>Notre galerie</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. donec sed leo in nisi vehicula bibendum.Aliquam sit amet blandit nisi, sodales molestie.</p>
-        <div>
-            <img src="assets/kevin-bhagat-zNRITe8NPqY-unsplash_1.jpg" alt="photo">
+        <div class="slider" id="slider">
+            <div class="slides" id="slides">
+                <div class="slide"><img src="assets/kevin-bhagat-zNRITe8NPqY-unsplash_1.jpg" alt="image 1"></div>
+                <div class="slide"><img src="assets/Illustration_chatgpt_14_10_25_agenceco.png" alt="image 2"></div>
+                <div class="slide"><img src="assets/Illustration_groupe_chatgpt_14_10_25_agenceco.png" alt="image 3"></div>
+            </div> 
         </div>
-        <div id="Galerie-btn">
-            <button class="Prev-btn" type="button"></button>
-            <button class="Next-btn" type="button"></button>
+        <div class="slider-btn">
+            <button id="prev" type="button">&#10094;</button>
+            <button id="next" type="button">&#10095;</button>
         </div>
+        
         </section>
     </main>
 
