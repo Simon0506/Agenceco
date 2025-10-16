@@ -17,41 +17,41 @@ croix.addEventListener ('click', () => {
 });
 
 
-// Slider 
+// Récupération et affichage des articles de l'API
+const articles = document.querySelector('#articles')
 
-const prev = document.getElementById('prev');
-const next = document.getElementById('next');
-const slides = document.getElementById('slides');
-const nbSlides = slides.children.length;
+const titre = document.querySelectorAll('.title')
+const titres = Array.from(titre)
 
-let slide = 0;
+const date = document.querySelectorAll('.publicationDate')
+const dates = Array.from(date)
 
-prev.addEventListener ('click', () => {
-  console.log('click à gauche')
-  slide = slide - 1;
-  if(slide < 0) {
-    slide = nbSlides - 1;
-  }
-  changeSlide();
-})
+const description = document.querySelectorAll('.description')
+const descriptions = Array.from(description)
 
-next.addEventListener ('click', () => {
-  console.log('click à droite')
-  slide = slide + 1;
-  if(slide >= nbSlides) {
-    slide = 0
-  }
-  changeSlide();
-})
+const content = document.querySelectorAll('.content')
+const contents = Array.from(content)
 
-function changeSlide() {
-  slides.style.transform = 'translateX(-' + (slide*100) + '%)';
-}
+fetch('http://localhost:3000/articles')
+    .then (response => response.json())
+    .then (articlesAPI => {
+      for (let i=0; i<articles.children.length; i++) {
+        titres[i].textContent = articlesAPI[i].title
+        dates[i].textContent = articlesAPI[i].publicationDate
+        descriptions[i].textContent = articlesAPI[i].description
+        contents[i].textContent = articlesAPI[i].content
+        }
+      });
 
-setInterval(() => {
-  slide = slide + 1;
-  if(slide >= nbSlides) {
-    slide = 0
-  }
-  changeSlide();
-}, 5000)
+
+
+// Authentification de l'utilisateur
+
+fetch('http://localhost:3000/login',{method:'POST'})
+      .then (log => //log.json())
+      //.then (login => {
+        console.log(log)
+      )
+
+
+

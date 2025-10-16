@@ -211,7 +211,7 @@ h2 {
   font-weight: 400;
 }
 
-.title-news {
+.title {
   font-size: 1.6em;
   font-weight: 500;
   margin: 10px 0;
@@ -575,12 +575,12 @@ h2 {
   font-weight: 400;
 }
 
-.news-page .title-news, .publicationDate {
+.news-page .title,.news-page .publicationDate {
   text-align: left;
   margin: 0;
 }
 
-.description, .content {
+.news-page.description,.news-page .content {
   margin: 40px;
 }
 
