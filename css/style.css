@@ -553,6 +553,11 @@ h2 {
   cursor: pointer;
 }
 
+#messageLog {
+  font-size: 0.8em;
+  color: red;
+}
+
 
 
 /* Page Nos actualités  */
@@ -596,6 +601,10 @@ h2 {
   gap: 20px;
 }
 
+.btn-modify.hidden {
+  display: none;
+}
+
 .updateNews {
   background-color: #ffaa01;
   color: white;
@@ -613,6 +622,11 @@ h2 {
   border-radius: 5px;
   padding: 4px 17px;
   cursor: pointer;
+}
+
+#messageDel {
+  font-size: 0.8em;
+  color: red;
 }
 
 
@@ -668,6 +682,11 @@ h2 {
   font-weight: 500;
   cursor: pointer;
   margin: 20px;
+}
+
+#messageAdd {
+  font-size: 0.8em;
+  color: red;
 }
 
 

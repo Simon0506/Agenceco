@@ -24,7 +24,7 @@
             <div id="croix" class="close-burger">
                 <img src="assets/croix_menu.png" alt="closed" >
             </div>
-            <ul id="menu" class="nav-closed">
+            <ul id="menu" class="nav-links">
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="#Equipe">Notre équipe</a></li>
                 <li><a href="#Services">Nos services</a></li>
@@ -38,12 +38,13 @@
 
     <main class="addNews-page">
         <h2>Ajouter une actualité</h2>
-        <form class="addNews" action="#">
-            <input type="text" name="title" placeholder="Le titre de mon actualité" class="addNews-title">
-            <textarea name="description" placeholder="Sa description" class="addNews-textarea"></textarea>
-            <textarea name="content" placeholder="Son contenu" class="addNews-textarea"></textarea>
+        <form class="addNews"  id="saveForm">
+            <input type="text" name="title" placeholder="Le titre de mon actualité" class="addNews-title" id="newTitle" required>
+            <textarea name="description" placeholder="Sa description" class="addNews-textarea" id="newDescription" required></textarea>
+            <textarea name="content" placeholder="Son contenu" class="addNews-textarea" id="newContent" required></textarea>
             <input type="submit" value="Sauvegarder" class="saveNews">
         </form>
+        <p id="messageAdd"></p>
     </main>
 
     <!------------------- Pied de page -------------------->
@@ -95,5 +96,6 @@
     </footer>
 
     <script src="./js/script.js"></script>
+    <script src="./js/articles.js"></script>
 </body>
 </html>

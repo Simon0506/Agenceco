@@ -39,8 +39,9 @@
     <main class="news-page">
         <h2>Nos actualités</h2>
         <div class="btn-addNews">
-            <a class="addNews-btn" href="addNews.html">Ajouter une actualité</a>
+            <a class="addNews-btn" id="addNewsBtn" href="addNews.html">Ajouter une actualité</a>
         </div>
+        <p id="messageDel"></p>
         <div id="articles">
             <article class="news">
                 <h3 class="title">Le titre de mon actualité</h3>
@@ -50,7 +51,7 @@
                     <p class="publicationDate">Publié le 05/04/2023</p>
                     <div class="btn-modify">
                         <a href="updateNews.html" class="updateNews">Modifier</a>
-                        <button class="deleteNews">Supprimer</button>
+                        <button class="deleteNews" type="submit">Supprimer</button>
                     </div>
                 </div>
             </article>
@@ -62,7 +63,7 @@
                     <p class="publicationDate">Publié le 05/04/2023</p>
                     <div class="btn-modify">
                         <a href="updateNews.html" class="updateNews">Modifier</a>
-                        <button class="deleteNews">Supprimer</button>
+                        <button class="deleteNews" type="submit">Supprimer</button>
                     </div>
                 </div>
             </article>
@@ -74,11 +75,11 @@
                     <p class="publicationDate">Publié le 05/04/2023</p>
                     <div class="btn-modify">
                         <a href="updateNews.html" class="updateNews">Modifier</a>
-                        <button class="deleteNews">Supprimer</button>
+                        <button class="deleteNews" type="submit">Supprimer</button>
                     </div>
                 </div>
             </article>
-            <article class="news">
+            <article class="news" id="article">
                 <h3 class="title">Le titre de mon actualité</h3>
                 <p class="description">Description de l'actualité</p>
                 <p class="content">Contenu de l'actualité</p>
@@ -86,7 +87,7 @@
                     <p class="publicationDate">Publié le 05/04/2023</p>
                     <div class="btn-modify">
                         <a href="updateNews.html" class="updateNews">Modifier</a>
-                        <button class="deleteNews">Supprimer</button>
+                        <button class="deleteNews" type="submit">Supprimer</button>
                     </div>
                 </div>
             </article>
@@ -146,5 +147,7 @@
     </footer>
 
     <script src="./js/script.js"></script>
+    <script src="./js/articles.js"></script>
+
 </body>
 </html>

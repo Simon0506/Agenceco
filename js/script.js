@@ -3,6 +3,9 @@
 const burger = document.getElementById('burger');
 const nav = document.getElementById('menu');
 const croix = document.getElementById('croix');
+const connect = document.getElementById('connect-btn')
+const token = localStorage.getItem('token')
+
 
 burger.addEventListener ('click', () => {
   nav.classList.toggle('open');
@@ -17,41 +20,24 @@ croix.addEventListener ('click', () => {
 });
 
 
-// Récupération et affichage des articles de l'API
-const articles = document.querySelector('#articles')
+if (token && connect) {
+  connect.innerText = 'Me déconnecter'
+  connect.addEventListener ('click', () => {
+      connect.href = '#'
+      localStorage.removeItem('token')
+      connect.innerText = 'Me connecter'
+      window.location.reload()
+  })
+}
 
-const titre = document.querySelectorAll('.title')
-const titres = Array.from(titre)
-
-const date = document.querySelectorAll('.publicationDate')
-const dates = Array.from(date)
-
-const description = document.querySelectorAll('.description')
-const descriptions = Array.from(description)
-
-const content = document.querySelectorAll('.content')
-const contents = Array.from(content)
-
-fetch('http://localhost:3000/articles')
-    .then (response => response.json())
-    .then (articlesAPI => {
-      for (let i=0; i<articles.children.length; i++) {
-        titres[i].textContent = articlesAPI[i].title
-        dates[i].textContent = articlesAPI[i].publicationDate
-        descriptions[i].textContent = articlesAPI[i].description
-        contents[i].textContent = articlesAPI[i].content
-        }
-      });
-
-
-
-// Authentification de l'utilisateur
-
-fetch('http://localhost:3000/login',{method:'POST'})
-      .then (log => //log.json())
-      //.then (login => {
-        console.log(log)
-      )
-
+      
+// Display none de la page d'actualités si !token
+if (window.location.pathname.endsWith('blog.html') && !token) {
+    document.getElementById('addNewsBtn').style.display = 'none'
+    const btnModify = Array.from(document.querySelectorAll('.btn-modify'))
+    for (let u=0; u<btnModify.length; u++) {
+        btnModify[u].style.display = 'none'
+    }
+}
 
 

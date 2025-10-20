@@ -39,11 +39,12 @@
     <main class="login-page">
         <h2>Connexion</h2>
         <p>Pour voir les actualités, merci de vous connecter</p>
-        <form action="#" class="login-form">
-            <input type="email" name="email" placeholder="E-mail" class="login-input">
-            <input type="password" name="password" placeholder="Mot de passe" class="login-input">
+        <form action="#" class="login-form" id="loginForm">
+            <input type="email" name="email" placeholder="E-mail" class="login-input" id="emailLog" required>
+            <input type="password" name="password" placeholder="Mot de passe" class="login-input" id="passwordLog" required>
             <input type="submit" value="Me connecter" class="login-btn">
         </form>
+        <p id="messageLog"></p>
     </main>
 
     <!------------------- Pied de page -------------------->
@@ -95,5 +96,7 @@
     </footer>
 
     <script src="./js/script.js"></script>
+    <script src="./js/login.js"></script>
+
 </body>
 </html>
