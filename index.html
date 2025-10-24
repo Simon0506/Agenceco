@@ -110,8 +110,9 @@
 
         <section id="Actualites">
         <h2>Dernières actualités</h2>
+        <p id="noArticle"></p>
         <div id="articles">
-            <article class="news">
+            <article class="news" id="article">
                 <h3 class="title">Le titre de mon actualité</h3>
                 <p class="publicationDate">05/04/2023</p>
                 <p class="description">Description de l'actualité</p>
@@ -138,36 +139,36 @@
         <section id="Contact">
         <h2>Contactez-nous</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. donec sed leo in.</p>
-        <form action="#" method="get" class="form-contact">
+        <form class="form-contact">
             <div class="line-contact">
             <div class="line-form">
-                <input type="text" name="nom" placeholder="Nom">
+                <input type="text" name="nom" placeholder="Nom" required>
                 <div class="line-block"></div>
             </div>
             <div class="line-form">
-                <input type="text" name="categorie" placeholder="Catégorie">
-                <div class="line-block"></div>
-            </div>
-            </div>
-            <div class="line-contact">
-            <div class="line-form">
-                <input type="tel" name="telephone" placeholder="Téléphone">
-                <div class="line-block"></div>
-            </div>
-            <div class="line-form">
-                <input type="text" name="ville" placeholder="Ville">
+                <input type="text" name="categorie" placeholder="Catégorie" required>
                 <div class="line-block"></div>
             </div>
             </div>
             <div class="line-contact">
             <div class="line-form">
-                <input id="email" type="email" name="email" placeholder="Email">
+                <input type="tel" name="telephone" placeholder="Téléphone" required>
+                <div class="line-block"></div>
+            </div>
+            <div class="line-form">
+                <input type="text" name="ville" placeholder="Ville" required>
                 <div class="line-block"></div>
             </div>
             </div>
             <div class="line-contact">
             <div class="line-form">
-                <textarea id="message" name="message" placeholder="Message"></textarea>
+                <input id="email" type="email" name="email" placeholder="Email" required>
+                <div class="line-block"></div>
+            </div>
+            </div>
+            <div class="line-contact">
+            <div class="line-form">
+                <textarea id="message" name="message" placeholder="Message" required></textarea>
                 <div class="line-block"></div>
             </div>
             </div>
@@ -282,6 +283,5 @@
 
     <script src="./js/script.js"></script>
     <script src="./js/articles.js"></script>
-    <script src="./js/index.js"></script>
 </body>
 </html>

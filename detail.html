@@ -36,73 +36,21 @@
 
     </header>
 
-    <main class="news-page">
-        <h2>Nos actualités</h2>
-        <div class="btn-addNews">
-            <a class="addNews-btn" id="addNewsBtn" href="addNews.html">Ajouter une actualité</a>
-        </div>
-        <p id="noArticle"></p>
-        <div id="articles">
-            <article class="news">
-                <div class="clickbox">
-                    <h3 class="title">Le titre de mon actualité</h3>
-                    <p class="description">Description de l'actualité</p>
-                    <p class="content">Contenu de l'actualité</p>
-                </div>
-                <div class="bottom-news">
-                    <p class="publicationDate">Publié le 05/04/2023</p>
-                    <div class="btn-modify">
-                        <button class="updateNews">Modifier</button>
-                        <button class="deleteNews">Supprimer</button>
-                    </div>
-                </div>
-            </article>
-            <article class="news">
-                <div class="clickbox">
-                    <h3 class="title">Le titre de mon actualité</h3>
-                    <p class="description">Description de l'actualité</p>
-                    <p class="content">Contenu de l'actualité</p>
-                </div>
-                <div class="bottom-news">
-                    <p class="publicationDate">Publié le 05/04/2023</p>
-                    <div class="btn-modify">
-                        <button class="updateNews">Modifier</button>
-                        <button class="deleteNews">Supprimer</button>
-                    </div>
-                </div>
-            </article>
-            <article class="news">
-                <div class="clickbox">
-                    <h3 class="title">Le titre de mon actualité</h3>
-                    <p class="description">Description de l'actualité</p>
-                    <p class="content">Contenu de l'actualité</p>
-                </div>
-                <div class="bottom-news">
-                    <p class="publicationDate">Publié le 05/04/2023</p>
-                    <div class="btn-modify">
-                        <button class="updateNews">Modifier</button>
-                        <button class="deleteNews">Supprimer</button>
-                    </div>
-                </div>
-            </article>
-            <article class="news" id="article">
-                <div class="clickbox">
-                    <h3 class="title">Le titre de mon actualité</h3>
-                    <p class="description">Description de l'actualité</p>
-                    <p class="content">Contenu de l'actualité</p>
-                </div>
-                <div class="bottom-news">
-                    <p class="publicationDate">Publié le 05/04/2023</p>
-                    <div class="btn-modify">
-                        <button class="updateNews">Modifier</button>
-                        <button class="deleteNews">Supprimer</button>
-                    </div>
-                </div>
-            </article>
-        </div>
-        <div id="blogBottom">
-            <a class="backToTop" href="#">Haut de page</a>
-        </div>
+    <main>
+        <section class="news-page">
+            <a id="backToNews" href="blog.html">Retour aux actualités</a>
+            <h2 id="detailTitle"></h2>
+            <p id="detailDate"></p>
+            <h3 id="detailDescription"></h3>
+            <p class="news" id="detailContent"></p>
+            <div class="navArticles">
+                <button id="PrevNews">Article précédent</button>
+                <button id="NextNews">Article suivant</button>
+            </div>    
+            <div id="blogBottom">
+                <a class="backToTop" href="#">Haut de page</a>
+            </div>
+        </section>
         
     </main>
 
@@ -146,9 +94,6 @@
 
         <section id="Copyright">
         <div class="copyright">Copyright &copy; 2021 AGENCECO - All rights reserved</div>
-        <div>
-            <a id="connect-btn" href="login.html">Me connecter</a>
-        </div>
         <div id="logos-network">
             <a href="#"><img src="assets/facebook.png" alt="Facebook" class="Network"></a>
             <a href="#"><img src="assets/twitter.png" alt="X (twitter)" class="Network"></a>

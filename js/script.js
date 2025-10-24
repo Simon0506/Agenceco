@@ -19,6 +19,48 @@ croix.addEventListener ('click', () => {
   burger.style.display = 'flex';
 });
 
+if (window.location.pathname.endsWith('index.html')) {
+  // Slider 
+
+  const prev = document.getElementById('prev');
+  const next = document.getElementById('next');
+  const slides = document.getElementById('slides');
+  const nbSlides = slides.children.length;
+
+  let slide = 0;
+
+  prev.addEventListener ('click', () => {
+    console.log('click à gauche')
+    slide = slide - 1;
+    if(slide < 0) {
+      slide = nbSlides - 1;
+    }
+    changeSlide();
+  })
+
+  next.addEventListener ('click', () => {
+    console.log('click à droite')
+    slide = slide + 1;
+    if(slide >= nbSlides) {
+      slide = 0
+    }
+    changeSlide();
+  })
+
+  function changeSlide() {
+    slides.style.transform = 'translateX(-' + (slide*100) + '%)';
+  }
+
+  setInterval(() => {
+    slide = slide + 1;
+    if(slide >= nbSlides) {
+      slide = 0
+    }
+    changeSlide();
+  }, 5000)
+
+}
+
 
 if (token && connect) {
   connect.innerText = 'Me déconnecter'
