@@ -9,7 +9,6 @@ body {
   margin: 0;
   padding: 0;
   justify-content: center;
-  scroll-behavior: smooth;
 }
 
 input, textarea, ::placeholder {
@@ -65,7 +64,7 @@ nav ul {
 }
 
 
-/* En-tête */
+/* Accueil */
 
 .backgroundAccueil {
   background-image: url("../assets/rodion-kutsaev-049M_crau5k-unsplash_1.jpg");
@@ -74,11 +73,7 @@ nav ul {
   width: 100%;
   background-position: center;
   position: relative;
-  bottom: 60px;
 }
-
-
-/* Accueil */
 
 .Accueil { 
   position: absolute;
@@ -106,14 +101,12 @@ h2 {
   text-align: center;
   font-size: 3.2em;
   font-weight: 600;
+  margin: 0;
+  padding-top: 60px;
 }
 
 
 /* Notre équipe */
-
-#Equipe {
-  margin-top: -60px;
-}
 
 .team {
   text-align: center;
@@ -404,13 +397,11 @@ h2 {
 /* Notre galerie */
 
 #Galerie {
-  margin: 100px;
-  margin-bottom: 0;
+  margin: 0 100px;
 }
 
 #Galerie p {
   text-align: center;
-  margin: -20px 0 30px 0;
   font-size: 1.7em;
 }
 
