@@ -1,45 +1,67 @@
-# Backend AgencEco
+# Project AGENCECO
 
-Ce projet est le backend pour l'application Todo List, destiné aux étudiants du Learning Campus pour le développement de projets frontend. Il fournit une API RESTful pour gérer une liste de tâches (todos).
+AgencEco is a website for an eco-friendly web agency.
 
-## Commencer
+## Installation
 
-Ces instructions vous permettront d'obtenir une copie du projet en cours d'exécution sur votre machine locale à des fins de développement et de test.
+To install this project, you have to clone the following folder in your PC. To do that, open a terminal and use the following command :
 
-### Prérequis
+```git clone https://github.com/Simon0506/Agenceco.git```
 
-Pour exécuter ce projet, vous aurez besoin de Node.js et npm installés sur votre machine. Vous pouvez télécharger Node.js et npm à partir d'[ici](https://nodejs.org/en/download).
-
-### Installation
-
-Suivez ces étapes pour configurer le backend sur votre machine locale :
-
-1. **Cloner le dépôt**
-
-   Ouvrez un terminal et utilisez la commande suivante pour cloner le dépôt GitHub :
-
-```git clone https://github.com/gducampus/AgencEcoBackend```
-
-2. **Installer les dépendances**
-
-Naviguez dans le répertoire du projet cloné et exécutez :
-
-```cd AgencEcoBackend```
+Then, install depedencies for the backend :
 
 ```npm install```
 
-Cette commande installera les dépendances nécessaires pour exécuter le backend.
-
-3. **Démarrer le serveur**
-
-Une fois les dépendances installées, vous pouvez démarrer le serveur avec :
+Now you can start the server :
 
 ```npm start```
 
-Votre serveur devrait maintenant être en cours d'exécution et accessible localement à l'adresse `http://localhost:3000/artilces`.
+### Usage
 
-## Utilisation
+In the folder "Frontend", you can find 6 HTML files :
 
-Une fois le serveur démarré, vous pouvez accéder à l'API du Todo List Backend. Pour plus de détails sur les endpoints disponibles et comment les utiliser, veuillez vous référer à la documentation de l'API accessible via [http://localhost:3000/api-docs](http://localhost:3000/api-docs) après avoir démarré le serveur.
+   "index.html" is the main page
+   "blog.html" is the page for the articles' list
+   "login.html" is the login page
+   "updateNews.html" is the page to modify an article
+   "addNews.html" is the page to add an article
+   "detail.html" is the page where you can see each article (one by one) in detail
+
+You have also 3 folders :
+
+   "assets" for images, icons, ...
+   "css" for the stylesheet "style.css"
+   "js" for Javascript. In this folder you can see 3 files : 
+
+      *** script.js
+         In this file, you can manage the burger menu, the slider, the login/logout button display and modify's buttons display on the blog page.
+
+      *** login.js
+         In this file, you have the javascript to make the login with an API's link
+
+      *** articles.js
+         In this file, you can manage all the javascript about articles and API : GET, POST, DELETE, ...
+
+
+### Tech Stack
+
+The frontend use HTML5, CSS3 for the style and Javascript for the dynamic managing.
+
+The backend use Node.js and npm for the API REST and JWT to secure the login
+
+#### Deployment
+
+This project is hosted in Alwaysdata. To go to the website, use the following URL :
+
+``https://agenceco-st.alwaysdata.net``
+
+
+### Resources 
+
+** MDN Web Docs was used for HTML, CSS and JS
+** W3C to validate the HTML and CSS
+** GDU and OpenClassrooms for videos and lessons
+** Git and GitHub to save and share this project
+** Tanaguru for the accessibility
 
 

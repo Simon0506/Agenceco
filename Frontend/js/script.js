@@ -65,13 +65,14 @@ if (window.location.pathname.endsWith('index.html')) {
 
 }
 
+//enregistrement de l'url précédente pour revenir après la connexion
 if (connect) {
   connect.addEventListener('click', () => {
     sessionStorage.setItem('previousPage', window.location.href)
   })
 }
 
-
+// déconnexion sans revenir sur la page login
 if (token && connect) {
   connect.innerText = 'Me déconnecter'
   connect.href = '#'
